@@ -21,9 +21,6 @@ install.bat
 * adaptive linux autostart 
 * config json
 
-## Thanks
-[扩软博客](https://blog.kuoruan.com/102.html)
-
 ## License
 
 **WTFPL**
