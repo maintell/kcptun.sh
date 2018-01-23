@@ -17,8 +17,8 @@ if [ "$1" = "server" ] || [ "$1" = "client" ]; then
     sudo ln -s $kcpath/$kcpname.sh /usr/local/bin/$kcpname && chmod +x $kcpname.sh
     # Download kcptun
     # TODO: Auto detect latest release
-    # reference URL: http://stackoverflow.com/questions/24987542/is-there-a-link-to-github-for-downloading-a-file-in-the-latest-release-of-a-repo
-    wget https://github.com/xtaci/kcptun/releases/download/v20161009/kcptun-linux-amd64-20161009.tar.gz
+    # reference URL: http://stackoverflow.com/questions/24987542/is-there-a-link-to-github-for-downloading-a-file-in-the-latest-release-of-a-repo    
+    wget https://github.com/xtaci/kcptun/releases/download/v20171201/kcptun-linux-amd64-20171201.tar.gz
     tar -zxf kcptun-linux-amd64-*.tar.gz
     rm kcptun-linux-amd64-*.tar.gz
     # Auto start
