@@ -5,7 +5,7 @@ while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 SCRIPT_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 function start() {
     echo "Starting kcptun"
-    $SCRIPT_DIR/server_linux_amd64 -l :29900 -t 127.0.0.1:8388 -key test -mtu 1400 -sndwnd 2048 -rcvwnd 2048 -mode fast2 > $SCRIPT_DIR/kcptun.log 2>&1 &
+    $SCRIPT_DIR/server_linux_amd64 -l :27015 -t 127.0.0.1:443 -key maintell -mtu 1300 -sndwnd 2048 -rcvwnd 2048 -mode fast2 -nocomp -crypt none > $SCRIPT_DIR/kcptun.log 2>&1 &
     echo "Kcptun started"
 }
 function stop() {
